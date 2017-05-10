@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.20/browser.min.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="text/babel">
+    // ReactDOM.render(
+    //   React.createElement(
+    //     'h1',
+    //     null,
+    //     'Hello World!'
+    //   ),
+    //   document.getElementById('app')
+    // );
+
+    // ReactDOM.render(
+    //   <h1>Hello World!</h1>,
+    //   document.getElementById('app')
+
+    var FirstComponent = React.createClass({
+      render:function() {
+        return (
+          <h1>This is my first component</h1>
+        )
+      }
+    });
+
+    ReactDOM.render(
+      <FirstComponent />,
+      document.getElementById('app')
+    )
+  </script>
+</body>
+</html>
